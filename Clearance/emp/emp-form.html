@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400&display=swap" rel="stylesheet">
+    <title>NEW</title>
+</head>
+<body>
+    <form action="action_page.php" style="border:1px solid #ccc"      onsubmit="myFunction()">
+        <div class="container">
+          <h1>New Clearnce</h1>
+          <p>Please fill in this form to create a new Clearance.
+            <br> الرجاء تعبئة النموذج لإنشاء طلب إخلاء طرف جديد
+          </p>
+          <hr>
+          <label for="fname"> <b> Full Name (الاسم الكامل)</b></label>
+    <input type="text" id="fname" name="fullname" placeholder="Your name.." required>
+
+          <label for=clearancetype" ><b>Clearance type (نوع الإخلاء) </b></label> <br>
+          <select id="reqt" name="clearancetype">
+           
+            <option value="annualvac">Annual Vacation إجازة سنوية </option>
+            <option value="compleave">Compensatory Leave إجازة تعويضية</option>
+            <option value="endservices">End of Services  نهاية الخدمة</option>
+            <option value="Assigned">Assigned تكليف </option>
+            <option value="Shift">Shift نقل </option>
+            <option value="dk">ايفاد</option>
+          </select> <br>
+            <label for="eq">  رقم الإقرار </label> <br>
+    <input type="text" id="eq" name="eq" placeholder="" > <br>
+
+    <label for="start-date">  <b> Start Dateتاريخ البداية </b></label> <br>
+<input type="date" id="start-date" name="Start" required> <br>
+
+<label for="end-date" class="form-control"> <b>End Date تاريخ النهاية</b> </label> 
+<input type="date" id="end-date" name="end"required> <br>
+
+
+          <label for="jobtitle"> <b>Job Title (المسمى الوظيفي) </b> </label>
+        <select name="jobtitle" id="jobtitle" class="form-control">
+          <optgroup label=" Administrative Departments الأقسام الأدارية">
+<option value="">اداري</option>
+<option value="">Specialist اخصائي</option>
+</optgroup>
+<optgroup label=" Medical Departments الأقسام الطبية ">
+<option value=""> Specialist اخصائي</option>
+<option value=""> Consultant استشاري</option>
+<option value="">Resident مقيم</option>
+
+</optgroup>
+<optgroup label="Nursing Departments أقسام التمريض">
+<option value="">Specialist Nurse اخصائي تمريض</option>
+
+</optgroup>
+
+
+        </select>
+
+          <label for="department" ><b> department (القسم) </b></label> <br>
+          <label for="dept_select">Choose your department</label>
+          <select id="dept_select" >
+            <option value="dis" disabled selected> اختر قسمك مما يلي ... </option>
+
+<optgroup label="الصحة الإلكترونية">
+              <option value="category-zero__1-option"> E-Health الصحة الإلكترونية </option>
+            
+           
+            </optgroup>
+
+            
+            <optgroup label="مكافحة العدوى (التعقيم المركزي)">
+              <optionز value="category-one__1-option">الصحة العامة</option>
+              <option value="category-one__2-option">التعقيم</option>
+              <option value="category-one__4-option">النفايات الطبية</option>
+            </optgroup>
+           
+            <optgroup label="Nursing التمريض">
+              <option value="category-two__0-option">Nursing Office مكتب التمريض </option>
+              <option value="category-two__1-option">(M1) الحوامل </option>
+              <option value="category-two__2-option"> (M2) ما بعد الولادة الطبيعية </option>
+              <option value="category-two__3-option"> (M3)ما بعد الولادة القيصرية </option>
+              <option value="category-two__4-option"> (DR) كشك الولادة </option>
+              <option value="category-two__5-option"> (OR) العمليات</option>
+              <option value="category-two__6-option">ER الطوارئ </option>
+              <option value="category-two__7-option">NICO عناية حديثي الولادة </option>
+              <option value="category-two__8-option"> PICO عناية الأطفال </option>
+              <option value="category-two__9-option">Healthy Baby Unit وحدة الأطفال الأصحاء </option>
+              <option value="category-two__10-option">ICU عناية الكبار </option>
+              <option value="category-two__11-option">Gynecology أمراض النساء  </option>
+              <option value="category-two__12-option">OPD العيادات </option>
+
+              </optgroup>
+              <optgroup label="Medical Services الخدمات الطبية ">
+              <option value="category-three__0-option">  OB-GYNEالنساءوالولادة</option>
+              <option value="category-three__1-option"> ICU العناية المركزة للكبار</option>
+              <option value="category-three__2-option">PICOالعناية المركزة للأطفال</option>
+              <option value="category-three__3-option">NICO العناية المركزة لحديثي الولادة</option>
+              <option value="category-three__5-option">التخديرAnestesia</option>
+              <option value="category-three__6-option">العلاج النفسي </option>
+              <option value="category-three__7-option">العمليات</option>
+              <option value="category-three__8-option">باطنية الأطفال</option>
+              <option value="category-three__9-option">جراحة الأطفال</option>
+               <option value="category-three__10-option">إدارة الأسرة</option>
+                <option value="category-three__11-option">المراجعة الاكلينيكية</option>
+                 <option value="category-three__12-option">الرعاية الصحية المنزلية</option>
+                  
+        </optgroup>
+              
+        <optgroup label="Support Medical Services الخدمات الطبية المساعدة ">  
+
+<option value="category-six__0-option"></option>
+              <option value="category-four__1-option">الرعاية الصيدلية </option>
+              <option value="category-four__2-option">خدمات التغذية</option>
+              <option value="category-four__3-option">التغذية السريرية</option>
+              <option value="category-four__4-option"> الأشعة</option>
+               <option value="category-four__5-option">المختبر و نقل الدم</option>
+                <option value="category-four__6-option">العلاج الطبيعي  </option>
+                 <option value="category-four__7-option"> التوعية الدينية</option>
+                
+          </optgroup>
+         
+ <optgroup label=" الجودة و سلامة المرضى">
+              <option value="category-five__1-option">الجودة و سلامة المرضى</option>
+            </optgroup>
+
+             <optgroup label="التواصل المؤسسي">
+              <option value="category-five__1-option">التواصل المؤسسي</option>
+            </optgroup>
+
+           <optgroup label="الشؤون الأكاديمية و التدريب">
+              <option value="category-six__1-option">الشؤون الأكاديمية و التدريب</option>
+            </optgroup>
+
+            <optgroup label=" KPI التطوير و المشاريع ">
+              <option value="category-seven__1-option">التطوير و المشاريع </option>
+            </optgroup>
+
+            <optgroup label="تنمية الإرادات">
+              <option value="category-eight__1-option">تنمية الإرادات </option>
+              </optgroup>
+
+              <optgroup label="الشؤون القانونية و الإلتزام">
+              <option value="category-nine__1-option">الشؤون القانونية و الإلتزام</option>
+              </optgroup>
+
+
+              <optgroup label="الإدارة المناوبة">
+              <option value="category-ten__1-option">الإدارةالمناوبة</option>
+            </optgroup>
+
+            <optgroup label="تجربة المريض">
+              <option value="category-eleven__1-option">تجربة المريض</option>
+            </optgroup>
+
+
+             <optgroup label="الإمداد و التموين الطبي">
+              <option value="category-twelve__1-option">المستودعات الطبية </option>
+              <option value="category-twelve__1-option">المستودعات غير الطبية </option>
+              <option value="category-twelve__1-option">التجهيزات </option>
+              <option value="category-twelve__1-option">المشتريات</option>
+              <option value="category-twelve__1-option">العقود</option>
+            </optgroup>
+            
+            <optgroup label="الموارد البشرية ">
+              <option value="category-thirteen__1-option">الموارد البشرية </option>
+            </optgroup>
+            
+
+            <optgroup label="الشؤون المالية ">
+              <option value="category-fourteen__1-option">الشؤون المالية </option>
+
+            </optgroup>
+
+            <optgroup label="التشغيل">
+              <option value="category-fifteen__1-option">التشغيل</option>
+            </optgroup>
+            
+
+          </select>
+
+
+
+           </select>
+          <label for="id"> <b> Employee Number (الرقم الوظيفي)</b></label>
+          <input type="text" id="idnum" placeholder="234.." required> 
+          
+    <label for="fname"><b>Gender الجنس </b></label> 
+    <br>
+    <select id="gender" name="gender">
+     
+      <option value="female">Female</option>
+      <option value="male">Male</option>
+      <option value="other">Other</option>
+
+    </select>
+    <label for="nat"><b> Nationality (الجنسية) </b></label>
+    <input type="text" id="nat" name="Nationality" placeholder=" Saudi Arabia.." required>
+
+    <label for="phone"> <b> Phone Number (رقم الجوال)</b></label><br>
+    <input type="tel" name="phone" id="phone" placeholder="055XXX..." required> <br> <br>
+
+    
+    <label for="subject"> <b> Notes (الملاحظات)</b></label><br>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px; width: 80%;" ></textarea> <br>
+
+          
+          </label>
+      
+          <p>By creating a new request you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      
+          <div class="clearfix">
+            <button type="reset" class="cancelbtn">Cancel إلغاء</button>
+            <button type="submit" class="submitbtn" > Submit إرسال</a> </button>
+          </div>
+        </div>
+      </form>
+      <script>
+ 
+
+
+function myFunction() {
+  
+  alert("The form was submitted successfully");
+}
+
+        </script>
+</body>
+</html>
